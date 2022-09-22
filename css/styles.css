@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-width: 100vw;
+}
+html body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(257deg, 40%, 49%);
+  background-image: url("../assets/img/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.containerr {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: 30px 0 30px 0;
+  width: 80rem;
+  height: 45rem;
+}
+.containerr .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 10%;
+}
+.containerr .logo img {
+  width: 210px;
+}
+.containerr .content {
+  display: flex;
+  width: 100%;
+  height: 80%;
+}
+.containerr .content .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+}
+.containerr .content .right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 45%;
+}
+.containerr .content .right-side .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 30px;
+  padding: 42px;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+.containerr .content .right-side .text h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Poppins", sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+}
+.containerr .content .right-side .text p {
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.containerr .content .right-side .text button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 4px 6px 20px -8px hsl(0deg, 0%, 0%);
+  color: hsl(257deg, 40%, 49%);
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  background-color: hsl(0deg, 0%, 100%);
+  border: none;
+  width: 200px;
+  height: 50px;
+  transition: all 0.2s linear;
+}
+.containerr .content .right-side .text button:hover {
+  background-color: hsl(300deg, 69%, 71%);
+  color: hsl(0deg, 0%, 100%);
+}
+.containerr .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 10%;
+}
+.containerr .footer .icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  width: 182px;
+  height: 60px;
+}
+.containerr .footer .icons-container picture {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 24px;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.containerr .footer .icons-container picture:hover {
+  border: 1px solid hsl(300deg, 69%, 71%);
+}
+.containerr .footer .icons-container picture .bi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 21px;
+  transition: all 0.2s linear;
+}
+.containerr .footer .icons-container picture .bi:hover {
+  color: hsl(300deg, 69%, 71%);
+}
+
+@media (max-width: 1320px) {
+  .containerr {
+    width: 45rem;
+    height: 69.6rem;
+  }
+  .containerr .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .containerr .content .left-side {
+    width: 100%;
+  }
+  .containerr .content .right-side {
+    width: 100%;
+  }
+  .containerr .content .right-side .text {
+    margin-top: 0;
+  }
+  .containerr .footer {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  html body {
+    background-image: url("../assets/img/bg-mobile.svg");
+    background-size: contain;
+    background-position: top;
+  }
+  .containerr {
+    width: 32rem;
+    height: 67rem;
+  }
+  .containerr .content .left-side img {
+    width: 100%;
+  }
+  .containerr .content .right-side .text {
+    padding: 28px;
+  }
+  .containerr .content .right-side .text h1 {
+    text-align: center;
+  }
+  .containerr .content .right-side .text p {
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .containerr .content .right-side .text button {
+    align-self: center;
+    width: 310px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 568px) {
+  html body {
+    background-image: url("../assets/img/bg-mobile.svg");
+    background-size: contain;
+    background-position: top;
+  }
+  .containerr {
+    height: 52.7rem;
+    width: 23rem;
+  }
+  .containerr .content .right-side .text h1 {
+    font-size: 28px;
+  }
+  .containerr .content .right-side .text p {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .containerr .content .right-side .text button {
+    width: 210px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
